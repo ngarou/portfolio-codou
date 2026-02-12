@@ -3,45 +3,222 @@
 <head>
   <meta charset="UTF-8">
   <title>Codou Ndiaye – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 40px; }
-    h1 { color: #333; }
-    .projets { margin-top: 30px; }
-    .bloc { margin-bottom: 25px; }
-    a.bouton {
-      display: inline-block; padding: 8px 14px; background: #0077cc; color: white;
-      border-radius: 5px; text-decoration: none;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0077cc, #00aaff);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      border-left: 5px solid #0077cc;
+      padding-left: 10px;
+      margin-bottom: 20px;
+      color: #0077cc;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #e3f2fd;
+      color: #0077cc;
+      padding: 6px 12px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 14px;
+      background: #0077cc;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .btn:hover {
+      background: #005fa3;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
+
+<header>
   <h1>👩🏽‍💻 Codou Ndiaye</h1>
-  <p>Étudiante en Master 2 – Gestion de Données & Ingénierie Logicielle à l’UGB.<br>
-  Passionnée par l’intelligence artificielle, les données, et les projets à impact social.</p>
+  <p>Master 2 – Gestion de Données & Ingénierie Logicielle | IA & Data Science</p>
+  <p>Université Gaston Berger de Saint-Louis</p>
+</header>
 
-  <h2 class="projets">💼 Mes projets</h2>
+<section>
+  <h2>🎯 Profil</h2>
+  <div class="card">
+    <p>
+      Étudiante en Master 2 spécialisée en gestion de données et ingénierie logicielle.
+      Passionnée par l’intelligence artificielle, l’analyse de données et les projets à impact social.
+      Actuellement impliquée dans le développement d’un assistant intelligent pour la détection
+      du stress et de la dépression au sein de l’Unité de Santé Mentale de l’UGB.
+    </p>
+  </div>
+</section>
 
-  <div class="bloc">
-    <h3>🧠 Assistant IA – Santé mentale</h3>
-    <p>Détection de stress et de dépression à partir de textes (Python, TF-IDF, SVM)</p>
-    <a href="https://colab.research.google.com/drive/1fZF85KMEzVaCebqAmEz61L5Dqx8r_Rh4" class="bouton" target="_blank">🔗 Voir sur Colab</a>
+<section>
+  <h2>🧠 Projets IA & Data</h2>
+
+  <div class="card">
+    <h3>Assistant IA – Santé mentale</h3>
+    <p>
+      Détection automatique du stress et de la dépression à partir de textes.
+      Utilisation de TF-IDF, SVM et analyse NLP en Python.
+    </p>
+    <a href="https://colab.research.google.com/drive/1fZF85KMEzVaCebqAmEz61L5Dqx8r_Rh4" class="btn" target="_blank">
+      🔗 Voir sur Colab
+    </a>
   </div>
 
-  <div class="bloc">
-    <h3>📊 Analyse salaires / expérience</h3>
-    <p>Visualisation et corrélation entre expérience et salaire (Pandas, Seaborn)</p>
-    <a href="https://github.com/ngarou" class="bouton" target="_blank">💻 Voir sur GitHub</a>
+  <div class="card">
+    <h3>Classification d’articles web</h3>
+    <p>
+      Machine Learning avec SVM et Arbres de Décision (Scikit-learn).
+      Prétraitement, vectorisation TF-IDF et évaluation de modèles.
+    </p>
+    <a href="https://colab.research.google.com/drive/1YU5HxYvs44FnFw7PqQ33z7jekd1KG6bL" class="btn" target="_blank">
+      📘 Voir sur Colab
+    </a>
   </div>
 
-  <div class="bloc">
-    <h3>🌐 Classification articles web</h3>
-    <p>Machine learning avec SVM, arbres de décision (Scikit-learn)</p>
-    <a href="https://colab.research.google.com/drive/1YU5HxYvs44FnFw7PqQ33z7jekd1KG6bL" class="bouton" target="_blank">📘 Voir sur Colab</a>
+  <div class="card">
+    <h3>Analyse salaires & expérience</h3>
+    <p>
+      Analyse statistique et visualisation de données avec Pandas et Matplotlib.
+      Étude de corrélation entre expérience professionnelle et salaire.
+    </p>
+    <a href="https://github.com/ngarou" class="btn" target="_blank">
+      💻 Voir sur GitHub
+    </a>
   </div>
 
+</section>
+
+<section>
+  <h2>💼 Expériences</h2>
+
+  <div class="card">
+    <h3>Préconsultant & Assistant Intelligent</h3>
+    <p><strong>Unité de Santé Mentale – UGB (En cours)</strong></p>
+    <p>
+      Développement d’un assistant IA capable d’évaluer l’état mental
+      (stress/dépression) et d’orienter les patients vers un spécialiste.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Projet – Analyse de données entreprise</h3>
+    <p>
+      Étude de données professionnelles et salariales.
+      Nettoyage, visualisation et interprétation des résultats.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Application mobile Quiz UGB</h3>
+    <p>
+      Développement d’une application mobile éducative sur l’UGB.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>🛠️ Compétences</h2>
+  <div class="card skills">
+    <span>Python</span>
+    <span>Machine Learning</span>
+    <span>Scikit-learn</span>
+    <span>NLP</span>
+    <span>UML</span>
+    <span>Merise</span>
+    <span>Analyse de données</span>
+    <span>Gestion de projet SI</span>
+  </div>
+</section>
+
+<section>
+  <h2>🎓 Formation</h2>
+  <div class="card">
+    <p><strong>Master – Gestion de Données & Ingénierie Logicielle</strong><br>
+    Université Gaston Berger (2023 – En cours)</p>
+
+    <p><strong>Licence Informatique</strong><br>
+    Université Gaston Berger (2021 – 2022)</p>
+  </div>
+</section>
+
+<section>
   <h2>📞 Contact</h2>
-  <p>Email : <a href="mailto:ndiaye.codou3@ugb.edu.sn">ndiaye.codou3@ugb.edu.sn</a><br>
-     Téléphone : +221 77 442 29 18<br>
-     GitHub : <a href="https://github.com/ngarou" target="_blank">github.com/ngarou</a></p>
+  <div class="card">
+    <p>Email : <a href="mailto:ndiaye.codou3@ugb.edu.sn">ndiaye.codou3@ugb.edu.sn</a></p>
+    <p>Téléphone : +221 77 442 29 18</p>
+    <p>GitHub : <a href="https://github.com/ngarou" target="_blank">github.com/ngarou</a></p>
+    <p>LinkedIn : <a href="https://linkedin.com/in/ndiayengarou" target="_blank">linkedin.com/in/ndiayengarou</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Codou Ndiaye – Portfolio IA & Data Science
+</footer>
+
 </body>
 </html>
